@@ -81,7 +81,6 @@ CREATE TABLE inventory (
     maximum_stock INT, -- Maximum quantity you want in stock
     supplier_id INT, -- Foreign Key referencing Supplier
     -- Add other relevant attributes, such as shelf location, expiration date, etc.
-    FOREIGN KEY (product_id) REFERENCES product(product_id),
     FOREIGN KEY (location_id) REFERENCES location(location_id),
     FOREIGN KEY (supplier_id) REFERENCES supplier(supplier_id)
 );
