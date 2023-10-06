@@ -1,12 +1,3 @@
-CREATE TABLE product (
-    product_id INT AUTO_INCREMENT PRIMARY KEY,
-    category VARCHAR(20) NOT NULL CHECK (category IN("boardgame", "comic", "apparel", "tcg item")),
-    cost DECIMAL(5,2),
-    sales_price DECIMAL(5,2)
-);
-
-
-
 CREATE TABLE boardgame (
     boardgame_id INT AUTO_INCREMENT PRIMARY KEY,
     product_id INT NOT NULL,
