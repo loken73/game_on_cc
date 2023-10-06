@@ -71,7 +71,6 @@ Inventory Management
 --Inventory Table is main table for general product inventory
 CREATE TABLE inventory (
     inventory_id INT PRIMARY KEY,
-    product_id INT, -- Foreign Key referencing Product
     apparel_variation_id INT, -- Foreign Key referencing Apparel Variation (for apparel)
     quantity_on_hand INT CHECK (quantity_on_hand > 0), -- Current quantity in stock
     quantity_on_order INT CHECK (quantity_on_hand >= 0), -- Quantity of items on order but not yet received
