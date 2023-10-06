@@ -15,7 +15,7 @@ CREATE TABLE boardgame (
     cost DECIMAL(5,2),
     sales_price DECIMAL(5,2),
     inventory_id INT,
-    FOREIGN KEY (productID) REFERENCES product(productID)
+    FOREIGN KEY (inventory_id) REFERENCES inventory(inventory_id)
 );
 
 CREATE TABLE comic (
@@ -34,7 +34,7 @@ CREATE TABLE comic (
     cost DECIMAL(5,2),
     sales_price DECIMAL(5,2),
     inventory_id INT,
-    FOREIGN KEY (productID) REFERENCES product(productID)
+    FOREIGN KEY (inventory_id) REFERENCES inventory(inventory_id)
 );
 
 CREATE TABLE apparel (
@@ -46,7 +46,6 @@ CREATE TABLE apparel (
     care_instructions VARCHAR(200),
     brand VARCHAR(50),
     decoration_method VARCHAR(50),
-    FOREIGN KEY (productID) REFERENCES product(productID)
 );
 
 CREATE TABLE apparel_variation (
@@ -58,7 +57,8 @@ CREATE TABLE apparel_variation (
     cost DECIMAL(5,2),
     sales_price DECIMAL(5,2),
     inventory_id INT,
-    FOREIGN KEY (apparelID) REFERENCES apparel(apparelID)
+    FOREIGN KEY (apparelID) REFERENCES apparel(apparelID),
+    FOREIGN KEY (inventory_id) REFERENCES inventory(inventory_id)
 );
 
 
