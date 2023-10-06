@@ -14,6 +14,7 @@ CREATE TABLE boardgame (
     boxart VARCHAR(200),
     cost DECIMAL(5,2),
     sales_price DECIMAL(5,2),
+    inventory_id INT,
     FOREIGN KEY (productID) REFERENCES product(productID)
 );
 
@@ -32,6 +33,7 @@ CREATE TABLE comic (
     image_url VARCHAR(200),
     cost DECIMAL(5,2),
     sales_price DECIMAL(5,2),
+    inventory_id INT,
     FOREIGN KEY (productID) REFERENCES product(productID)
 );
 
@@ -55,6 +57,7 @@ CREATE TABLE apparel_variation (
     gender VARCHAR (10),
     cost DECIMAL(5,2),
     sales_price DECIMAL(5,2),
+    inventory_id INT,
     FOREIGN KEY (apparelID) REFERENCES apparel(apparelID)
 );
 
