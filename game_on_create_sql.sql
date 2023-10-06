@@ -21,6 +21,8 @@ CREATE TABLE boardgame (
     min_player_count TINYINT NOT NULL DEFAULT 1,
     max_player_count TINYINT NOT NULL DEFAULT 2,
     boxart VARCHAR(200),
+    cost DECIMAL(5,2),
+    sales_price DECIMAL(5,2),
     FOREIGN KEY (productID) REFERENCES product(productID)
 );
 
@@ -37,6 +39,8 @@ CREATE TABLE comic (
     genre VARCHAR(100),
     upc INT,
     image_url VARCHAR(200),
+    cost DECIMAL(5,2),
+    sales_price DECIMAL(5,2),
     FOREIGN KEY (productID) REFERENCES product(productID)
 );
 
@@ -58,6 +62,8 @@ CREATE TABLE apparel_variation (
     color VARCHAR(30),
     size VARCHAR(10),
     gender VARCHAR (10),
+    cost DECIMAL(5,2),
+    sales_price DECIMAL(5,2),
     FOREIGN KEY (apparelID) REFERENCES apparel(apparelID)
 );
 
