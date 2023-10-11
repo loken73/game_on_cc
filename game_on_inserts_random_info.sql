@@ -39,7 +39,10 @@ VALUES
 
 
 
-INSERT Apparel Variations
+INSERT INTO apparel_variation
+VALUES
+    (),
+    ();
 
 
 
