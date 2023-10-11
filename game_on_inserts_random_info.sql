@@ -39,7 +39,7 @@ VALUES
 
 
 
-INSERT INTO apparel_variation
+INSERT INTO apparel_variation (apparel_id NOT NULL, color VARCHAR(30), size VARCHAR(10), gender VARCHAR (10), cost DECIMAL(5,2), sales_price DECIMAL(5,2), inventory_id INT)
 VALUES
     (),
     ();
