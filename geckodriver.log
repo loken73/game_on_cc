@@ -1,3 +1,16 @@
 1697905615261	geckodriver	INFO	Listening on 127.0.0.1:52970
 1697905618340	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "52971" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\f29pl\\AppData\\Local\\Temp\\rust_mozprofilev5rMhr"
 1697905669243	geckodriver	INFO	Listening on 127.0.0.1:53070
+1697905672303	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "53071" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\f29pl\\AppData\\Local\\Temp\\rust_mozprofile5mdZFK"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1697905673029	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1697905673197	Marionette	INFO	Listening on port 53081
+WebDriver BiDi listening on ws://127.0.0.1:53071
+Read port: 53081
+1697905673605	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:53071/devtools/browser/700156d1-0149-46d0-8a07-fe5019e27ef0
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.myfloridahouse.gov."
+1697905728322	Marionette	INFO	Stopped listening on port 53081
+Dynamically enable window occlusion 1
