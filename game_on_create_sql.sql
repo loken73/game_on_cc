@@ -19,7 +19,7 @@ CREATE TABLE boardgame (
 );
 
 CREATE TABLE comic (
-    comic_id AUTO_INCREMENT PRIMARY KEY,
+    comic_id INT AUTO_INCREMENT PRIMARY KEY,
     product_id INT NOT NULL,
     title VARCHAR(200) NOT NULL,
     story VARCHAR(200),
@@ -38,7 +38,7 @@ CREATE TABLE comic (
 );
 
 CREATE TABLE apparel (
-    apparel_id AUTO_INCREMENT PRIMARY KEY,
+    apparel_id INT AUTO_INCREMENT PRIMARY KEY,
     product_id NOT NULL,
     apparel_title VARCHAR(200),
     material VARCHAR(100),
@@ -49,7 +49,7 @@ CREATE TABLE apparel (
 );
 
 CREATE TABLE apparel_variation (
-    variation_id AUTO_INCREMENT PRIMARY KEY,
+    variation_id INT AUTO_INCREMENT PRIMARY KEY,
     apparel_id NOT NULL,
     color VARCHAR(30),
     size VARCHAR(10),
@@ -70,7 +70,7 @@ Inventory Management
 
 --Inventory Table is main table for general product inventory
 CREATE TABLE inventory (
-    inventory_id INT PRIMARY KEY,
+    inventory_id INT AUTO_INCREMENT PRIMARY KEY,
     category VARCHAR(30) CHECK category IN ('boardgame', 'comic', 'apparel'),
     quantity_on_hand INT CHECK (quantity_on_hand > 0), -- Current quantity in stock
     quantity_on_order INT CHECK (quantity_on_hand >= 0), -- Quantity of items on order but not yet received
