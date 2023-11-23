@@ -1,6 +1,5 @@
 CREATE TABLE boardgame (
     boardgame_id INT AUTO_INCREMENT PRIMARY KEY,
-    product_id INT NOT NULL,
     title VARCHAR(200) NOT NULL,
     description VARCHAR(200) NOT NULL,
     avg_playtime INT,
@@ -20,7 +19,6 @@ CREATE TABLE boardgame (
 
 CREATE TABLE comic (
     comic_id INT AUTO_INCREMENT PRIMARY KEY,
-    product_id INT NOT NULL,
     title VARCHAR(200) NOT NULL,
     story VARCHAR(200),
     language VARCHAR(150),
@@ -39,7 +37,6 @@ CREATE TABLE comic (
 
 CREATE TABLE apparel (
     apparel_id INT AUTO_INCREMENT PRIMARY KEY,
-    product_id NOT NULL,
     apparel_title VARCHAR(200),
     material VARCHAR(100),
     collar_style VARCHAR(100),
