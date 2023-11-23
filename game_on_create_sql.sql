@@ -73,8 +73,6 @@ CREATE TABLE inventory (
     quantity_on_order INT CHECK (quantity_on_hand >= 0), -- Quantity of items on order but not yet received
     last_updated DATETIME, -- Date and time of the last update
     location_id INT, -- Foreign Key referencing Location (if you have multiple locations)
-    cost_price DECIMAL(10, 2), -- Cost price per unit
-    retail_price DECIMAL(10, 2), -- Retail price per unit
     reorder_point INT, -- Minimum quantity that triggers a reorder
     maximum_stock INT, -- Maximum quantity you want in stock
     supplier_id INT, -- Foreign Key referencing Supplier
